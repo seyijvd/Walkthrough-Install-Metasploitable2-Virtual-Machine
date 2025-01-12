@@ -49,7 +49,7 @@ Default password: <strong>msfadmin</strong>
       <p><strong>Demo of penetration testing with Metasploitable 2</strong></p>
 <strong>Step 1:  </strong> open your both machines Metasploitable 2 and kali Linux side by side.
 <ul>•	First, we need to run both instances at the same time side by side so that we will be able to see the changes clearly. launch Vbox and start both Linux and Metasploitable 2 side by side.</ul>
-<img src="MV9.jpg"> 
+<img src="MV10.jpg"> 
  
 <strong>Step 2:  </strong> let’s check the IP addresses of both machines to get an overview of the target machine.
 <ul>•	now let’s open the terminal and check for the IP address of Metasploitable 2 on which we are going to perform the attack. use the following command:

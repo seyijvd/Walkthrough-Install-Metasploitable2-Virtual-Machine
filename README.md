@@ -79,15 +79,15 @@ root-user-#/ $ nmap -sV -O 192.168.10.5</ul></p>
 <strong>msf6~/ (unix/ftp/vsftpd_234_backdoor)</strong>: set RHOST 192.168.10.5
 <p><strong>Step 6:</strong></p> The final step is to run the exploit, by command exploit.
 <strong>msf6~/ (unix/ftp/vsftpd_234_backdoor)</strong>: exploit
-•	after setting RHOST just enter the exploit command and you will see the command shell of the target machine is obtained.
- <img src="
+<ul>•	after setting RHOST just enter the exploit command and you will see the command shell of the target machine is obtained.</ul>
+ <p><img src="MV13.jpg"></p>
  
-•	now we have successfully penetrated the target by obtaining a shell, you can try commands and verify in both machines at the same time. 
-Step 7: Verify by using some command shell commands like print the working directory or ls items in a folder.
-pwd, ls -l, ls -a etc
-•	so we have successfully taken look into how Metasploitable is useful for practicing penetration testing skills.
-•	we can see that both sides of the files are the same and we have root access to the machine.
-Conclusion:
+<ul>•	now we have successfully penetrated the target by obtaining a shell, you can try commands and verify in both machines at the same time.</ul> 
+<p><strong>Step 7:</strong></p> Verify by using some command shell commands like print the working directory or ls items in a folder.
+<strong>pwd, ls -l, ls -a etc</strong>
+<ul>•	so we have successfully taken look into how Metasploitable is useful for practicing penetration testing skills.</ul>
+<ul>•	we can see that both sides of the files are the same and we have root access to the machine.</ul>
+<p><strong>Conclusion:</strong></p>
 Metasploitable 2 is a great machine to practice and learn about penetration testing and hacking, while it comes with so many vulnerabilities and flaws that you can keep on digging and make your pen testing skills better. Currently, another version of Metasploitable is also available you can also go with that the process of configuring and installation is the same as above.
 In the above article, we have learned how to install Metasploitable version 2 successfully and seen a demo of exploitation with the most famous and basic exploit that is vsftpd_backdoor, there are many more exploits and techniques to learn and practice.
 

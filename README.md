@@ -1,11 +1,13 @@
 # Walkthrough-Install-Metasploitable2-Virtual-Machine
-How to install Metasploitable 2 in VirtualBox
+<p><h2>How to install Metasploitable 2 in VirtualBox</h2></p>
 
 Let’s first discuss what Metasploitable is, it is a testing environment that is very useful for beginner who wants to practice and test their penetration testing skills and security research. It is a target machine that is used to discover and penetrate vulnerabilities so that the user gets an idea of real-life targets and machines.
 In other words, Metasploitable is a virtual machine intentionally vulnerable version of Ubuntu designed for testing security tools and demonstrating common vulnerabilities.
 To install this virtual machine in your virtual box, We assume that you have a virtual box installed on your system.
-Installation
-Step 1:  Download the Metasploitable 2 file. 
+<p><strong>Installation</strong></p>
+<p><strong>Step 1:</p></strong>  Download the Metasploitable 2 file.
+
+ <img src="
  
  
 Step 2: The file initially will be in zip format so we need to extract it, after extracting the file open VirtualBox.

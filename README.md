@@ -7,55 +7,58 @@ To install this virtual machine in your virtual box, We assume that you have a v
 <p><strong>Installation</strong></p>
 <p><strong>Step 1:</p></strong>  Download the Metasploitable 2 file.
 
- <img src="
+ <img src="MV1.jpg">
  
  
-Step 2: The file initially will be in zip format so we need to extract it, after extracting the file open VirtualBox.
+<p><strong>Step 2:</strong></p> <p>The file initially will be in zip format so we need to extract it, after extracting the file open VirtualBox.</p>
+ 
+<img src="MV2.jpg">
+<p><strong>Step 3:</strong></p> Now as shown in the above image click on the new option in the Virtual box.
+<p><img src="MV3.jpg"></p>
+ 
+<p>•	now a window will pop up and you will be asked to provide some details like the name of your machine, installation path, type, and version.</p>
+<p>•	fill in the details like:</p>
+<p>Name: <strong>as per your choice</strong></p>
+<p>Path: <strong>leave as recommended</strong></p>
+<p>Type:<strong> Linux</strong></p>
+<p>Version: <strong>other (64-bit)</strong></p>
+<p><img src="MV4.jpg"></p> 
+ 
+<strong>Step 4:</strong> Select the RAM you want to provide to the virtual machine. recommended (512Mb).
+
+<p><img src="MV5.jpg"></p>
  
  
-Step 3: Now as shown in the above image click on the new option in the Virtual box.
+<strong>Step 5:</strong> Now choose the option to use an existing virtual hard disk file.
+<P><img src="MV6.jpg"></P> 
+ 
+<p>•	Now locate the file that we have extracted.</p>
+<p><strong>Step 6:</strong></p> <p>Now save the file and you will see that the instance is created with the name you have given.</p>
+
+<p><img src="MV7.jpg"></p>
+ 
+<p>•	We are good to go with the machine just press the start button from the top and wait for it to start and load the instance.</p>
+ 
+<p><img src="MV8.jpg"></p> 
+<p><strong>Step 7.</strong><p> once the instance is loaded you will be asked to provide a login name and password. By default the credentials are :
+<P>Default login: <strong>msfadmin</strong></P>
+Default password: <strong>msfadmin</strong>
  
  
-•	now a window will pop up and you will be asked to provide some details like the name of your machine, installation path, type, and version.
-•	fill in the details like:
-Name: as per your choice
-Path: leave as recommended
-Type: Linux
-Version: other (64-bit)
+<ul>•	once you log in with credentials you will be directed to the machine and we are done with the installation process.</ul>
+      <p><strong>Demo of penetration testing with Metasploitable 2</strong></p>
+<strong>Step 1:  </strong> open your both machines Metasploitable 2 and kali Linux side by side.
+<ul>•	First, we need to run both instances at the same time side by side so that we will be able to see the changes clearly. launch Vbox and start both Linux and Metasploitable 2 side by side.</ul>
+<img src="MV9.jpg"> 
  
- 
-Step 4: Select the RAM you want to provide to the virtual machine. recommended (512Mb).
- 
- 
-Step 5: Now choose the option to use an existing virtual hard disk file.
- 
- 
-•	Now locate the file that we have extracted.
-Step 6: Now save the file and you will see that the instance is created with the name you have given.
- 
- 
-•	We are good to go with the machine just press the start button from the top and wait for it to start and load the instance.
- 
- 
-Step 7. once the instance is loaded you will be asked to provide a login name and password. By default the credentials are :
-Default login: msfadmin
-Default password: msfadmin
- 
- 
-•	once you log in with credentials you will be directed to the machine and we are done with the installation process.
-Demo of penetration testing with Metasploitable 2
-Step 1: open your both machines Metasploitable 2 and kali Linux side by side.
-•	First, we need to run both instances at the same time side by side so that we will be able to see the changes clearly. launch Vbox and start both Linux and Metasploitable 2 side by side.
- 
- 
-Step 2: let’s check the IP addresses of both machines to get an overview of the target machine.
-•	now let’s open the terminal and check for the IP address of Metasploitable 2 on which we are going to perform the attack. use the following command:
-msfadmin@metasploitable:~$ ifconfig
-•	from the above image, we can see that we have an IP address i.e. 192.168.10.5 of the target machine.
-Step 3: now we will be performing a network scan with the help of the Nmap tool to see what services are running on target and which are way into the target.
-•	now the first step is to look for loops and vulnerabilities so that we can exploit the machine, to do so we will use Nmap scan on a Linux terminal. use command:
+<strong>Step 2:  </strong> let’s check the IP addresses of both machines to get an overview of the target machine.
+<ul>•	now let’s open the terminal and check for the IP address of Metasploitable 2 on which we are going to perform the attack. use the following command:
+msfadmin@metasploitable:~$ ifconfig</ul>
+<ul>•	from the above image, we can see that we have an IP address i.e. 192.168.10.5 of the target machine.</ul>
+<p><strong>Step 3:</strong></p> now we will be performing a network scan with the help of the Nmap tool to see what services are running on target and which are way into the target.
+<ul>now the first step is to look for loops and vulnerabilities so that we can exploit the machine, to do so we will use Nmap scan on a Linux terminal. use command:
 root-user-#/ $ nmap -sV -O 192.168.10.5
- 
+ <img src="
  
 •	in the above command -sV is used for getting the versions of services running on the target machine and -O is used to detect the operating system on the target machine.
 •	now we can see that we have so many exploitations ways and vulnerabilities to perform, we will be using the vsftpd_234_backdoor exploit, for exploitation and gaining access to the machine.

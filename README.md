@@ -56,22 +56,22 @@ Default password: <strong>msfadmin</strong>
 msfadmin@metasploitable:~$ ifconfig</ul>
 <ul>•	from the above image, we can see that we have an IP address i.e. 192.168.10.5 of the target machine.</ul>
 <p><strong>Step 3:</strong></p> now we will be performing a network scan with the help of the Nmap tool to see what services are running on target and which are way into the target.
-<ul>now the first step is to look for loops and vulnerabilities so that we can exploit the machine, to do so we will use Nmap scan on a Linux terminal. use command:
-root-user-#/ $ nmap -sV -O 192.168.10.5
- <img src="
+<p><ul>now the first step is to look for loops and vulnerabilities so that we can exploit the machine, to do so we will use Nmap scan on a Linux terminal. use command:
+root-user-#/ $ nmap -sV -O 192.168.10.5</ul></p>
+ <p><img src="MV11.jpg"></p>
  
-•	in the above command -sV is used for getting the versions of services running on the target machine and -O is used to detect the operating system on the target machine.
-•	now we can see that we have so many exploitations ways and vulnerabilities to perform, we will be using the vsftpd_234_backdoor exploit, for exploitation and gaining access to the machine.
-•	open Metasploit Framework with the command:
-Step 4:  Now that we have all the info related to the exploit that we need to use i.e. vsftpd_backdoor so now we can use Metasploit to exploit the machine and get access to the command shell. which will eventually give us access to the target machine.
-•	start the Metasploit Framework by the command mentioned below:
-root-user-#/ $ msfconsole
-•	after following the commands, we are going to choose the exploit that is vsftpd_backdoor and then set Rhost (targeted IP).
-Step 5: Now all we need to do is deploy the exploit into the target machine with the help of msfconsole, to do so we need to follow some basic steps that are:
-•	first, let’s select the exploit that we are going to use in this case it is vsftpd_backdoor, so we will use the following command :
-msf6~/ use exploit/unix/ftp/vsftpd_234_backdoor
-•	after selecting the above exploit let’s set up the target to which we are deploying the exploit.
-msf6~/ (unix/ftp/vsftpd_234_backdoor): show options
+<ul>•	in the above command -sV is used for getting the versions of services running on the target machine and -O is used to detect the operating system on the target machine</ul>.
+<ul>•	now we can see that we have so many exploitations ways and vulnerabilities to perform, we will be using the vsftpd_234_backdoor exploit, for exploitation and gaining access to the machine.</ul>
+<ul>•	open Metasploit Framework with the command:</ul>
+<p><strong>Step 4:</strong></p>  Now that we have all the info related to the exploit that we need to use i.e. vsftpd_backdoor so now we can use Metasploit to exploit the machine and get access to the command shell. which will eventually give us access to the target machine.
+<ul>•	start the Metasploit Framework by the command mentioned below:
+<strong>root-user-#/ $</strong> msfconsole</ul>
+<ul>•	after following the commands, we are going to choose the exploit that is vsftpd_backdoor and then set Rhost (targeted IP).</ul>
+<p><strong>Step 5:</strong></p> Now all we need to do is deploy the exploit into the target machine with the help of msfconsole, to do so we need to follow some basic steps that are:
+<ul>•	first, let’s select the exploit that we are going to use in this case it is vsftpd_backdoor, so we will use the following command :</ul>
+<strong>msf6~/</strong> use exploit/unix/ftp/vsftpd_234_backdoor
+<ul>•	after selecting the above exploit let’s set up the target to which we are deploying the exploit.</ul>
+<strong>msf6~/</strong> (unix/ftp/vsftpd_234_backdoor): show options
  
  
 •	now we can see that we have the option to set RHOST which is the receiver host. so we will set it to the IP address of the target machine.
